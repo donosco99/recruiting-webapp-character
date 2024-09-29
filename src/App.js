@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { Container, Typography } from '@mui/material';
+
 import './App.css';
 import { ATTRIBUTE_LIST, CLASS_LIST, SKILL_LIST } from './consts.js';
 
@@ -10,14 +12,12 @@ function App() {
       <header className="App-header">
         <h1>React Coding Exercise</h1>
       </header>
-      <section className="App-section">
-        <div>
-          Value:
-          {num}
-          <button>+</button>
-          <button>-</button>
-        </div>
-      </section>
+      <Container>
+        <Typography variant="h2" align="center" gutterBottom>
+          Character App
+        </Typography>
+      </Container>
+
     </div>
   );
 }
